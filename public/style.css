@@ -10,12 +10,32 @@ body {
 
 }
 
+#logo{
+  display: inline;
+  float: left;
+  height: 250px;
+  width: 250px;
+  margin-left: 100px;
+  padding: 100px;
+}
+
+#student_info{
+  display: inline;
+  float: right;
+  margin-right: 100px;
+  padding: 100px;
+}
+
+#student_index{
+  display: inline-block;
+}
+
 
 
 a { text-decoration: none; }
 
 h1.home {
-  font-size: 1.9em
+  font-size: 1.3em
 }
 
 
@@ -30,7 +50,7 @@ ul {
 html
 {
    color: #000 !important;
-   font-size: 1.3em
+   font-size: 1.2em
 
 
 

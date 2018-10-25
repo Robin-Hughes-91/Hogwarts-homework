@@ -4,18 +4,23 @@
 <h1 style="font size: 300px"> Student Roll Call</h1>
 
 <% for student in @students  %>
-<h2>
-<p>Name: <%= student.name() %></p>
-<p>Age: <%= student.age() %></p>
-<p>House: <%= student.house.house_name %></p>
+<div id="student_index">
+  <div id="student_info">
+    <h2>
+      <p>Name: <%= student.name() %></p>
+      <p>Age: <%= student.age() %></p>
+      <p>House: <%= student.house.house_name %></p>
+    </div>
 
-<img width="250" height="250" src= <%= student.house.logo %> >
+    <div id="logo">
+      <img width="250" height="250" src= <%= student.house.logo %>
+    </div>
 
-<h3>
+    <h3>
 
-</h3>
+    </h3>
 
- </h2>
- <% end %>
-
+  </h2>
+</div>
+<% end %>
  
