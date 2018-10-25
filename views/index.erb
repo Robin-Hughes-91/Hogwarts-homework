@@ -1,0 +1,21 @@
+<link rel='stylesheet' href='/style.css'>
+
+
+<h1 style="font size: 300px"> Student Roll Call</h1>
+
+<% for student in @students  %>
+<h2>
+<p>Name: <%= student.name() %></p>
+<p>Age: <%= student.age() %></p>
+<p>House: <%= student.house.house_name %></p>
+
+<img width="250" height="250" src= <%= student.house.logo %> >
+
+<h3>
+
+</h3>
+
+ </h2>
+ <% end %>
+
+ 

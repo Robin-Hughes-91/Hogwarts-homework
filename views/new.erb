@@ -1,0 +1,23 @@
+<form method="post" action="/students">
+<ul>
+  <li><label for="first_name">First Name: </label>
+  <input id="first_name" type="text" name="first_name" /></li>
+
+  <li><label for="last_name">Last Name: </label>
+  <input id="last_name" type="text" name="last_name" /></li>
+
+  <li><label for="age">Age: </label>
+  <input id="age" type="text" name="age" /></li>
+
+  <li><label for="House">Select a House:</label>
+  <select id="House" name="house_id">
+    <% for house in @houses%>
+    <option value ="<%=house.id%>" > <%= house.house_name %> </option>
+    <%end%>
+
+
+  </select></li>
+
+  <input type="submit" value="Add Student"/>
+</ul>
+</form>
